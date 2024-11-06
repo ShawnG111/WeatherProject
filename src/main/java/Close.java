@@ -12,8 +12,4 @@ public class Close {
             }
         }
     }
-
-    public static void main(String[] args) {
-        Close.run(null);
-    }
 }

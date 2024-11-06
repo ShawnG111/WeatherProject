@@ -37,9 +37,15 @@ public class CityJdbc {
 
         } catch (SQLException e) {
             throw new RuntimeException(e);
-        } finally{
-//            Close.run(conn);
-            Close.run(null);
+        } finally {
+            if (conn != null) {
+                try {
+                    conn.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                    throw new RuntimeException(e);
+                }
+            }
         }
     }
 }
