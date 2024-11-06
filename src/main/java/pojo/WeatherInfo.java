@@ -5,26 +5,24 @@ import java.util.List;
 import com.google.gson.annotations.Expose;
 
 @SuppressWarnings("unused")
-public class PojoTest {
+public class WeatherInfo {
 
     @Expose
-    private String count;
+    private int count;
     @Expose
     private List<Forecast> forecasts;
     @Expose
     private String info;
     @Expose
-    private String infocode;
+    private int infocode;
     @Expose
-    private String status;
+    private int status;
 
-    public String getCount() {
+    public int getCount() {
         return count;
     }
 
-    public void setCount(String count) {
-        this.count = count;
-    }
+    public void setCount(int count) { this.count = count; }
 
     public List<Forecast> getForecasts() {
         return forecasts;
@@ -42,30 +40,20 @@ public class PojoTest {
         this.info = info;
     }
 
-    public String getInfocode() {
+    public int getInfocode() {
         return infocode;
     }
 
-    public void setInfocode(String infocode) {
+    public void setInfocode(int infocode) {
         this.infocode = infocode;
     }
 
-    public String getStatus() {
+    public int getStatus() {
         return status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(int status) {
         this.status = status;
     }
 
-    @Override
-    public String toString() {
-        return "PojoTest{" +
-                "count='" + count + '\'' +
-                ", forecasts=" + forecasts +
-                ", info='" + info + '\'' +
-                ", infocode='" + infocode + '\'' +
-                ", status='" + status + '\'' +
-                '}';
-    }
 }

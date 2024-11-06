@@ -12,9 +12,9 @@ public class Cast {
     @Expose
     private String daypower;
     @Expose
-    private String daytemp;
+    private int daytemp;
     @SerializedName("daytemp_float")
-    private String daytempFloat;
+    private float daytempFloat;
     @Expose
     private String dayweather;
     @Expose
@@ -22,15 +22,15 @@ public class Cast {
     @Expose
     private String nightpower;
     @Expose
-    private String nighttemp;
+    private int nighttemp;
     @SerializedName("nighttemp_float")
-    private String nighttempFloat;
+    private float nighttempFloat;
     @Expose
     private String nightweather;
     @Expose
     private String nightwind;
     @Expose
-    private String week;
+    private int week;
 
     public String getDate() {
         return date;
@@ -48,19 +48,19 @@ public class Cast {
         this.daypower = daypower;
     }
 
-    public String getDaytemp() {
+    public int getDaytemp() {
         return daytemp;
     }
 
-    public void setDaytemp(String daytemp) {
+    public void setDaytemp(int daytemp) {
         this.daytemp = daytemp;
     }
 
-    public String getDaytempFloat() {
+    public float getDaytempFloat() {
         return daytempFloat;
     }
 
-    public void setDaytempFloat(String daytempFloat) {
+    public void setDaytempFloat(float daytempFloat) {
         this.daytempFloat = daytempFloat;
     }
 
@@ -88,19 +88,19 @@ public class Cast {
         this.nightpower = nightpower;
     }
 
-    public String getNighttemp() {
+    public int getNighttemp() {
         return nighttemp;
     }
 
-    public void setNighttemp(String nighttemp) {
+    public void setNighttemp(int nighttemp) {
         this.nighttemp = nighttemp;
     }
 
-    public String getNighttempFloat() {
+    public float getNighttempFloat() {
         return nighttempFloat;
     }
 
-    public void setNighttempFloat(String nighttempFloat) {
+    public void setNighttempFloat(float nighttempFloat) {
         this.nighttempFloat = nighttempFloat;
     }
 
@@ -120,29 +120,12 @@ public class Cast {
         this.nightwind = nightwind;
     }
 
-    public String getWeek() {
+    public int getWeek() {
         return week;
     }
 
-    public void setWeek(String week) {
+    public void setWeek(int week) {
         this.week = week;
     }
 
-    @Override
-    public String toString() {
-        return "Cast{" +
-                "date='" + date + '\'' +
-                ", daypower='" + daypower + '\'' +
-                ", daytemp='" + daytemp + '\'' +
-                ", daytempFloat='" + daytempFloat + '\'' +
-                ", dayweather='" + dayweather + '\'' +
-                ", daywind='" + daywind + '\'' +
-                ", nightpower='" + nightpower + '\'' +
-                ", nighttemp='" + nighttemp + '\'' +
-                ", nighttempFloat='" + nighttempFloat + '\'' +
-                ", nightweather='" + nightweather + '\'' +
-                ", nightwind='" + nightwind + '\'' +
-                ", week='" + week + '\'' +
-                '}';
-    }
 }

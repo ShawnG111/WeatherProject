@@ -8,7 +8,7 @@ import com.google.gson.annotations.Expose;
 public class Forecast {
 
     @Expose
-    private String adcode;
+    private int adcode;
     @Expose
     private List<Cast> casts;
     @Expose
@@ -18,11 +18,11 @@ public class Forecast {
     @Expose
     private String reporttime;
 
-    public String getAdcode() {
+    public int getAdcode() {
         return adcode;
     }
 
-    public void setAdcode(String adcode) {
+    public void setAdcode(int adcode) {
         this.adcode = adcode;
     }
 
@@ -58,14 +58,4 @@ public class Forecast {
         this.reporttime = reporttime;
     }
 
-    @Override
-    public String toString() {
-        return "Forecast{" +
-                "adcode='" + adcode + '\'' +
-                ", casts=" + casts +
-                ", city='" + city + '\'' +
-                ", province='" + province + '\'' +
-                ", reporttime='" + reporttime + '\'' +
-                '}';
-    }
 }
