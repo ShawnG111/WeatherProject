@@ -28,12 +28,4 @@ public class ExcelData {
     public void setCityCode(int cityCode) {
         this.cityCode = cityCode;
     }
-
-    public String toString() {
-        return "ExcelData{" +
-                "cityName='" + cityName + '\'' +
-                ", adCode=" + adCode +
-                ", cityCode=" + cityCode +
-                '}';
-    }
 }
