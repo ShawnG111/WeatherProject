@@ -2,7 +2,7 @@ import com.google.gson.Gson;
 import functions.ReturnUrl;
 import pojo.WeatherInfo;
 
-public class Main {
+public class DatabaseWrite {
 
     public static void main(String[] args) {
         Gson gson=new Gson();

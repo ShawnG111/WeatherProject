@@ -9,7 +9,7 @@ public class IntoDatabase {
 
     public static void main(String[] args) {
         String fileName = "C:\\华博\\AMap_adcode_citycode.xlsx";
-        EasyExcel.read(fileName,ExcelData.class,new MyListenerNew()).sheet().doRead();
+        EasyExcel.read(fileName,ExcelData.class,new MyListener()).sheet().doRead();
 
         long l1 = System.currentTimeMillis();
         for(int i=0; i<3; i++){
