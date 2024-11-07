@@ -1,3 +1,4 @@
+import functions.Close;
 import pojo.Cast;
 import pojo.WeatherInfo;
 
@@ -52,14 +53,7 @@ public class WeatherJdbc {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            if (conn != null) {
-                try {
-                    conn.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                    throw new RuntimeException(e);
-                }
-            }
+            Close.run(conn);
         }
 
     }

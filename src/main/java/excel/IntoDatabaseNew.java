@@ -3,7 +3,7 @@ import com.alibaba.excel.EasyExcel;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class IntoDatabase {
+public class IntoDatabaseNew {
 
     public static AtomicInteger count = new AtomicInteger(0);
 
